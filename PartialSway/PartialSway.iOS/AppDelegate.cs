@@ -23,7 +23,7 @@ namespace PartialSway.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new FormApp());
+            //LoadApplication(new FormApp());
 
             return base.FinishedLaunching(app, options);
         }

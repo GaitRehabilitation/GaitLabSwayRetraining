@@ -10,7 +10,7 @@ namespace PartialSway
 
         public override void Initialize()
         {
-            RegisterAppStart<MainPageViewModel>();
+            RegisterAppStart<SessionsViewModel>();
 
             Mvx.IoCProvider.RegisterSingleton< IBluetoothService>(new BluetoothService());
 

@@ -9,26 +9,14 @@
     <Import_RootNamespace>PartialSway</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FormApp.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)FormApp.xaml.cs">
-      <DependentUpon>FormApp.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)BaseApp.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\BluetoothService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IMotionService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SessionType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SessionsViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Services\IBluetoothService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\Sessions\PartialSway\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
   </ItemGroup>
 </Project>
