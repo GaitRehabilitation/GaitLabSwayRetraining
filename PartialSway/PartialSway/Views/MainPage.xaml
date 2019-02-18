@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:MainPageViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:viewModels="clr-namespace:PartialSway.ViewModels;assembly="
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    x:Class="PartialSway.Views.MainPage">
+    <ContentPage.Content>
+        <views:MvxListView ItemsSource="{Binding SessionItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label mvx:Bi.nd="Name" FontSize="24" AbsoluteLayout.LayoutBounds="0.25, 0.25, 400, 40"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </views:MvxListView>
+        <!--
+        <StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        -->
+
+    </ContentPage.Content>
+
+</views:MvxContentPage>
